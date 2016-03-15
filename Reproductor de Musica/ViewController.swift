@@ -20,7 +20,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     let i_Canciones = ["Abre tu corazón", "Afuera", "Alma gemela", "And I love her", "Behind the waterfall"]
     
-    // MARK: Types
+    // MARK: Tipos
     
     enum Opcion: Int {
         case Cancion
