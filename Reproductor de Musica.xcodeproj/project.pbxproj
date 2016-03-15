@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DECA7001C97817000B60A03 /* Abre tu corazón.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DECA6F61C97817000B60A03 /* Abre tu corazón.jpg */; };
+		9DECA7011C97817000B60A03 /* Abre tu corazón.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9DECA6F71C97817000B60A03 /* Abre tu corazón.mp3 */; };
+		9DECA7021C97817000B60A03 /* Afuera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DECA6F81C97817000B60A03 /* Afuera.jpg */; };
+		9DECA7031C97817000B60A03 /* Afuera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9DECA6F91C97817000B60A03 /* Afuera.mp3 */; };
+		9DECA7041C97817000B60A03 /* Alma gemela.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DECA6FA1C97817000B60A03 /* Alma gemela.jpg */; };
+		9DECA7051C97817000B60A03 /* Alma gemela.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9DECA6FB1C97817000B60A03 /* Alma gemela.mp3 */; };
+		9DECA7061C97817000B60A03 /* And I love her.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DECA6FC1C97817000B60A03 /* And I love her.jpg */; };
+		9DECA7071C97817000B60A03 /* And I love her.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9DECA6FD1C97817000B60A03 /* And I love her.mp3 */; };
+		9DECA7081C97817000B60A03 /* Behind the waterfall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DECA6FE1C97817000B60A03 /* Behind the waterfall.jpg */; };
+		9DECA7091C97817000B60A03 /* Behind the waterfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9DECA6FF1C97817000B60A03 /* Behind the waterfall.mp3 */; };
+		9DF253DA1C9329010077983B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF253D91C9329010077983B /* AppDelegate.swift */; };
+		9DF253DC1C9329010077983B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF253DB1C9329010077983B /* ViewController.swift */; };
+		9DF253DF1C9329010077983B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF253DD1C9329010077983B /* Main.storyboard */; };
+		9DF253E11C9329010077983B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF253E01C9329010077983B /* Assets.xcassets */; };
+		9DF253E41C9329010077983B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF253E21C9329010077983B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9DECA6F61C97817000B60A03 /* Abre tu corazón.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abre tu corazón.jpg"; sourceTree = "<group>"; };
+		9DECA6F71C97817000B60A03 /* Abre tu corazón.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Abre tu corazón.mp3"; sourceTree = "<group>"; };
+		9DECA6F81C97817000B60A03 /* Afuera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Afuera.jpg; sourceTree = "<group>"; };
+		9DECA6F91C97817000B60A03 /* Afuera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Afuera.mp3; sourceTree = "<group>"; };
+		9DECA6FA1C97817000B60A03 /* Alma gemela.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Alma gemela.jpg"; sourceTree = "<group>"; };
+		9DECA6FB1C97817000B60A03 /* Alma gemela.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Alma gemela.mp3"; sourceTree = "<group>"; };
+		9DECA6FC1C97817000B60A03 /* And I love her.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "And I love her.jpg"; sourceTree = "<group>"; };
+		9DECA6FD1C97817000B60A03 /* And I love her.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "And I love her.mp3"; sourceTree = "<group>"; };
+		9DECA6FE1C97817000B60A03 /* Behind the waterfall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Behind the waterfall.jpg"; sourceTree = "<group>"; };
+		9DECA6FF1C97817000B60A03 /* Behind the waterfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Behind the waterfall.mp3"; sourceTree = "<group>"; };
+		9DF253D61C9329010077983B /* Reproductor de Musica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reproductor de Musica.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF253D91C9329010077983B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DF253DB1C9329010077983B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DF253DE1C9329010077983B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DF253E01C9329010077983B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DF253E31C9329010077983B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DF253E51C9329010077983B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DF253D31C9329010077983B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DF253CD1C9329010077983B = {
+			isa = PBXGroup;
+			children = (
+				9DF253EB1C93344E0077983B /* Recursos */,
+				9DF253D81C9329010077983B /* Reproductor de Musica */,
+				9DF253D71C9329010077983B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DF253D71C9329010077983B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DF253D61C9329010077983B /* Reproductor de Musica.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DF253D81C9329010077983B /* Reproductor de Musica */ = {
+			isa = PBXGroup;
+			children = (
+				9DF253D91C9329010077983B /* AppDelegate.swift */,
+				9DF253DB1C9329010077983B /* ViewController.swift */,
+				9DF253DD1C9329010077983B /* Main.storyboard */,
+				9DF253E01C9329010077983B /* Assets.xcassets */,
+				9DF253E21C9329010077983B /* LaunchScreen.storyboard */,
+				9DF253E51C9329010077983B /* Info.plist */,
+			);
+			path = "Reproductor de Musica";
+			sourceTree = "<group>";
+		};
+		9DF253EB1C93344E0077983B /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				9DECA6F61C97817000B60A03 /* Abre tu corazón.jpg */,
+				9DECA6F71C97817000B60A03 /* Abre tu corazón.mp3 */,
+				9DECA6F81C97817000B60A03 /* Afuera.jpg */,
+				9DECA6F91C97817000B60A03 /* Afuera.mp3 */,
+				9DECA6FA1C97817000B60A03 /* Alma gemela.jpg */,
+				9DECA6FB1C97817000B60A03 /* Alma gemela.mp3 */,
+				9DECA6FC1C97817000B60A03 /* And I love her.jpg */,
+				9DECA6FD1C97817000B60A03 /* And I love her.mp3 */,
+				9DECA6FE1C97817000B60A03 /* Behind the waterfall.jpg */,
+				9DECA6FF1C97817000B60A03 /* Behind the waterfall.mp3 */,
+			);
+			name = Recursos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DF253D51C9329010077983B /* Reproductor de Musica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF253E81C9329010077983B /* Build configuration list for PBXNativeTarget "Reproductor de Musica" */;
+			buildPhases = (
+				9DF253D21C9329010077983B /* Sources */,
+				9DF253D31C9329010077983B /* Frameworks */,
+				9DF253D41C9329010077983B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reproductor de Musica";
+			productName = "Reproductor de Musica";
+			productReference = 9DF253D61C9329010077983B /* Reproductor de Musica.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DF253CE1C9329010077983B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CursoTecHardware;
+				TargetAttributes = {
+					9DF253D51C9329010077983B = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9DF253D11C9329010077983B /* Build configuration list for PBXProject "Reproductor de Musica" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DF253CD1C9329010077983B;
+			productRefGroup = 9DF253D71C9329010077983B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DF253D51C9329010077983B /* Reproductor de Musica */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DF253D41C9329010077983B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DECA7091C97817000B60A03 /* Behind the waterfall.mp3 in Resources */,
+				9DECA7011C97817000B60A03 /* Abre tu corazón.mp3 in Resources */,
+				9DECA7031C97817000B60A03 /* Afuera.mp3 in Resources */,
+				9DF253E41C9329010077983B /* LaunchScreen.storyboard in Resources */,
+				9DF253E11C9329010077983B /* Assets.xcassets in Resources */,
+				9DECA7071C97817000B60A03 /* And I love her.mp3 in Resources */,
+				9DECA7051C97817000B60A03 /* Alma gemela.mp3 in Resources */,
+				9DECA7041C97817000B60A03 /* Alma gemela.jpg in Resources */,
+				9DECA7061C97817000B60A03 /* And I love her.jpg in Resources */,
+				9DECA7081C97817000B60A03 /* Behind the waterfall.jpg in Resources */,
+				9DECA7021C97817000B60A03 /* Afuera.jpg in Resources */,
+				9DF253DF1C9329010077983B /* Main.storyboard in Resources */,
+				9DECA7001C97817000B60A03 /* Abre tu corazón.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DF253D21C9329010077983B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF253DC1C9329010077983B /* ViewController.swift in Sources */,
+				9DF253DA1C9329010077983B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9DF253DD1C9329010077983B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DF253DE1C9329010077983B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DF253E21C9329010077983B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DF253E31C9329010077983B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DF253E61C9329010077983B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DF253E71C9329010077983B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DF253E91C9329010077983B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Reproductor de Musica/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cursotec.hardware.Reproductor-de-Musica";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9DF253EA1C9329010077983B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Reproductor de Musica/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cursotec.hardware.Reproductor-de-Musica";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DF253D11C9329010077983B /* Build configuration list for PBXProject "Reproductor de Musica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF253E61C9329010077983B /* Debug */,
+				9DF253E71C9329010077983B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF253E81C9329010077983B /* Build configuration list for PBXNativeTarget "Reproductor de Musica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF253E91C9329010077983B /* Debug */,
+				9DF253EA1C9329010077983B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DF253CE1C9329010077983B /* Project object */;
+}

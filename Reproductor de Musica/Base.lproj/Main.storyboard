@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Reproductor_de_Musica" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona una canción" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eJ-FN-9CP">
+                                <rect key="frame" x="16" y="28" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reproducción:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-fI-AVq">
+                                <rect key="frame" x="20" y="416" width="96" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="88F-La-GHI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="88F-La-GHI"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="sG0-qw-ZvI">
+                                <rect key="frame" x="118" y="414" width="182" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="bi4-jm-LMn"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Tocar"/>
+                                    <segment title="Pausar"/>
+                                    <segment title="Detener"/>
+                                </segments>
+                                <connections>
+                                    <action selector="reproduccionCancion:" destination="BYZ-38-t0r" eventType="valueChanged" id="91i-EB-UJm"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volúmen:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4H-aV-cpo">
+                                <rect key="frame" x="20" y="446" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orden:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6U-8K-cK5">
+                                <rect key="frame" x="20" y="388" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hbZ-Bv-ajr">
+                                <rect key="frame" x="118" y="386" width="182" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="9ok-fr-W5a"/>
+                                    <constraint firstAttribute="height" constant="25" id="Dpd-9w-Ijy"/>
+                                    <constraint firstAttribute="width" constant="182" id="LUV-DP-ogG"/>
+                                    <constraint firstAttribute="width" constant="182" id="jGf-1X-Zlv"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Consecutivo"/>
+                                    <segment title="Aleatorio"/>
+                                </segments>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9ok-fr-W5a"/>
+                                        <exclude reference="jGf-1X-Zlv"/>
+                                    </mask>
+                                </variation>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Abre tu corazón.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vcT-Rm-bCc">
+                                <rect key="frame" x="60" y="178" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="amD-0q-tyh"/>
+                                    <constraint firstAttribute="width" constant="200" id="nmj-AM-PUC"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vZQ-Zw-Rxo">
+                                <rect key="frame" x="118" y="442" width="184" height="31"/>
+                                <connections>
+                                    <action selector="volumenCancion:" destination="BYZ-38-t0r" eventType="valueChanged" id="kie-JA-jEl"/>
+                                </connections>
+                            </slider>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAT-qP-lsJ">
+                                <rect key="frame" x="16" y="57" width="288" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="yRA-sZ-n7B"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1Ja-Bj-Vxs"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ENd-VY-EQf"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oAT-qP-lsJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="01G-7O-M88"/>
+                            <constraint firstItem="oAT-qP-lsJ" firstAttribute="centerX" secondItem="vcT-Rm-bCc" secondAttribute="centerX" constant="-48" id="028-H5-7Yk"/>
+                            <constraint firstItem="aAw-fI-AVq" firstAttribute="leading" secondItem="M6U-8K-cK5" secondAttribute="leading" id="14b-ja-0r7"/>
+                            <constraint firstItem="hbZ-Bv-ajr" firstAttribute="leading" secondItem="M6U-8K-cK5" secondAttribute="trailing" constant="16" id="2HL-Od-p5s"/>
+                            <constraint firstItem="oAT-qP-lsJ" firstAttribute="top" secondItem="4eJ-FN-9CP" secondAttribute="bottom" constant="8" id="6Ek-jq-sCU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vZQ-Zw-Rxo" secondAttribute="bottom" constant="8" symbolic="YES" id="6Of-c4-Xpe"/>
+                            <constraint firstItem="4eJ-FN-9CP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7K4-7R-qZz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sG0-qw-ZvI" secondAttribute="trailing" constant="-13" id="9rJ-fi-TSa"/>
+                            <constraint firstItem="vZQ-Zw-Rxo" firstAttribute="top" secondItem="sG0-qw-ZvI" secondAttribute="bottom" constant="3" id="DJd-pc-tpj"/>
+                            <constraint firstItem="aAw-fI-AVq" firstAttribute="trailing" secondItem="M6U-8K-cK5" secondAttribute="trailing" id="F4D-zY-LZQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hbZ-Bv-ajr" secondAttribute="trailing" constant="4" id="Fmj-sI-fXR"/>
+                            <constraint firstItem="k4H-aV-cpo" firstAttribute="top" secondItem="aAw-fI-AVq" secondAttribute="bottom" constant="9" id="Hra-L2-okW"/>
+                            <constraint firstItem="k4H-aV-cpo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="IMD-42-A6B"/>
+                            <constraint firstItem="hbZ-Bv-ajr" firstAttribute="leading" secondItem="M6U-8K-cK5" secondAttribute="trailing" constant="2" id="Jh9-A2-fkZ"/>
+                            <constraint firstItem="sG0-qw-ZvI" firstAttribute="leading" secondItem="hbZ-Bv-ajr" secondAttribute="leading" id="JjX-NK-fuM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hbZ-Bv-ajr" secondAttribute="trailing" constant="4" id="M3Z-tf-Gcu"/>
+                            <constraint firstItem="oAT-qP-lsJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MTw-c2-WON"/>
+                            <constraint firstItem="M6U-8K-cK5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="Mzi-Kv-gGi"/>
+                            <constraint firstItem="vZQ-Zw-Rxo" firstAttribute="centerY" secondItem="k4H-aV-cpo" secondAttribute="centerY" id="NGz-wD-LUF"/>
+                            <constraint firstItem="sG0-qw-ZvI" firstAttribute="centerY" secondItem="aAw-fI-AVq" secondAttribute="centerY" id="Q5b-25-idi"/>
+                            <constraint firstItem="aAw-fI-AVq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="SRG-d6-Kbf"/>
+                            <constraint firstItem="sG0-qw-ZvI" firstAttribute="top" secondItem="hbZ-Bv-ajr" secondAttribute="bottom" constant="3" id="VkG-qi-R5R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oAT-qP-lsJ" secondAttribute="trailing" constant="-68" id="XuV-PK-AO4"/>
+                            <constraint firstItem="aAw-fI-AVq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="Yml-rM-9qH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k4H-aV-cpo" secondAttribute="bottom" constant="13" id="cPd-ZK-3H3"/>
+                            <constraint firstItem="4eJ-FN-9CP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cga-AJ-Lmq"/>
+                            <constraint firstItem="4eJ-FN-9CP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dwh-7q-Iou"/>
+                            <constraint firstItem="M6U-8K-cK5" firstAttribute="centerY" secondItem="hbZ-Bv-ajr" secondAttribute="centerY" id="dze-H7-dLI"/>
+                            <constraint firstItem="M6U-8K-cK5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="e4H-BV-xUs"/>
+                            <constraint firstItem="oAT-qP-lsJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="e7B-Sl-4D4"/>
+                            <constraint firstItem="M6U-8K-cK5" firstAttribute="leading" secondItem="aAw-fI-AVq" secondAttribute="leading" id="fza-n1-6x1"/>
+                            <constraint firstItem="sG0-qw-ZvI" firstAttribute="leading" secondItem="vZQ-Zw-Rxo" secondAttribute="leading" constant="-2" id="hsg-51-Abz"/>
+                            <constraint firstItem="aAw-fI-AVq" firstAttribute="top" secondItem="M6U-8K-cK5" secondAttribute="bottom" constant="7" id="i3J-mH-ANd"/>
+                            <constraint firstItem="M6U-8K-cK5" firstAttribute="leading" secondItem="aAw-fI-AVq" secondAttribute="leading" id="if2-Ms-uCi"/>
+                            <constraint firstItem="oAT-qP-lsJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jH7-ye-70H"/>
+                            <constraint firstItem="oAT-qP-lsJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jP6-at-aYL"/>
+                            <constraint firstItem="k4H-aV-cpo" firstAttribute="trailing" secondItem="aAw-fI-AVq" secondAttribute="trailing" id="jVh-6F-aYB"/>
+                            <constraint firstItem="vcT-Rm-bCc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lsw-kY-D0Z"/>
+                            <constraint firstItem="vcT-Rm-bCc" firstAttribute="top" secondItem="oAT-qP-lsJ" secondAttribute="bottom" constant="8" symbolic="YES" id="mMh-p8-38E"/>
+                            <constraint firstItem="oAT-qP-lsJ" firstAttribute="centerX" secondItem="4eJ-FN-9CP" secondAttribute="centerX" id="mea-O6-6I8"/>
+                            <constraint firstItem="M6U-8K-cK5" firstAttribute="trailing" secondItem="aAw-fI-AVq" secondAttribute="trailing" id="oND-YA-Ocm"/>
+                            <constraint firstItem="M6U-8K-cK5" firstAttribute="leading" secondItem="k4H-aV-cpo" secondAttribute="leading" id="obw-u7-pfn"/>
+                            <constraint firstItem="aAw-fI-AVq" firstAttribute="leading" secondItem="M6U-8K-cK5" secondAttribute="leading" id="pgt-Ca-zNL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oAT-qP-lsJ" secondAttribute="trailing" constant="-20" id="qpI-uG-IwF"/>
+                            <constraint firstItem="k4H-aV-cpo" firstAttribute="leading" secondItem="aAw-fI-AVq" secondAttribute="leading" id="sDc-Mc-pzy"/>
+                            <constraint firstItem="sG0-qw-ZvI" firstAttribute="trailing" secondItem="hbZ-Bv-ajr" secondAttribute="trailing" id="taW-pF-B4p"/>
+                            <constraint firstItem="sG0-qw-ZvI" firstAttribute="leading" secondItem="aAw-fI-AVq" secondAttribute="trailing" constant="2" id="uDr-7u-kdz"/>
+                            <constraint firstItem="sG0-qw-ZvI" firstAttribute="trailing" secondItem="vZQ-Zw-Rxo" secondAttribute="trailing" id="xuV-hH-esU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hbZ-Bv-ajr" secondAttribute="trailing" constant="-9" id="yVN-en-4GS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="01G-7O-M88"/>
+                                <exclude reference="028-H5-7Yk"/>
+                                <exclude reference="XuV-PK-AO4"/>
+                                <exclude reference="e7B-Sl-4D4"/>
+                                <exclude reference="qpI-uG-IwF"/>
+                                <exclude reference="e4H-BV-xUs"/>
+                                <exclude reference="if2-Ms-uCi"/>
+                                <exclude reference="obw-u7-pfn"/>
+                                <exclude reference="2HL-Od-p5s"/>
+                                <exclude reference="Jh9-A2-fkZ"/>
+                                <exclude reference="M3Z-tf-Gcu"/>
+                                <exclude reference="yVN-en-4GS"/>
+                                <exclude reference="14b-ja-0r7"/>
+                                <exclude reference="F4D-zY-LZQ"/>
+                                <exclude reference="SRG-d6-Kbf"/>
+                                <exclude reference="Yml-rM-9qH"/>
+                                <exclude reference="pgt-Ca-zNL"/>
+                                <exclude reference="9rJ-fi-TSa"/>
+                                <exclude reference="IMD-42-A6B"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="Opciones" destination="oAT-qP-lsJ" id="i1M-r6-rbv"/>
+                        <outlet property="Portada" destination="vcT-Rm-bCc" id="ynb-sv-icc"/>
+                        <outlet property="botonOrden" destination="hbZ-Bv-ajr" id="I4a-Ne-R8f"/>
+                        <outlet property="botonReproduccion" destination="sG0-qw-ZvI" id="BIh-eB-ybG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Abre tu corazón.jpg" width="300" height="300"/>
+    </resources>
+</document>
