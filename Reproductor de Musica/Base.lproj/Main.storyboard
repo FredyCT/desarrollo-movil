@@ -58,6 +58,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAT-qP-lsJ">
+                                <rect key="frame" x="16" y="57" width="288" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="yRA-sZ-n7B"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1Ja-Bj-Vxs"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ENd-VY-EQf"/>
+                                </connections>
+                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orden:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6U-8K-cK5">
                                 <rect key="frame" x="20" y="388" width="96" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -83,6 +93,12 @@
                                     </mask>
                                 </variation>
                             </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vZQ-Zw-Rxo">
+                                <rect key="frame" x="118" y="442" width="184" height="31"/>
+                                <connections>
+                                    <action selector="volumenCancion:" destination="BYZ-38-t0r" eventType="valueChanged" id="kie-JA-jEl"/>
+                                </connections>
+                            </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Abre tu corazón.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vcT-Rm-bCc">
                                 <rect key="frame" x="60" y="178" width="200" height="200"/>
                                 <constraints>
@@ -90,22 +106,6 @@
                                     <constraint firstAttribute="width" constant="200" id="nmj-AM-PUC"/>
                                 </constraints>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vZQ-Zw-Rxo">
-                                <rect key="frame" x="118" y="442" width="184" height="31"/>
-                                <connections>
-                                    <action selector="volumenCancion:" destination="BYZ-38-t0r" eventType="valueChanged" id="kie-JA-jEl"/>
-                                </connections>
-                            </slider>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAT-qP-lsJ">
-                                <rect key="frame" x="16" y="57" width="288" height="113"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="113" id="yRA-sZ-n7B"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1Ja-Bj-Vxs"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ENd-VY-EQf"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -128,6 +128,7 @@
                             <constraint firstItem="oAT-qP-lsJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MTw-c2-WON"/>
                             <constraint firstItem="M6U-8K-cK5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="Mzi-Kv-gGi"/>
                             <constraint firstItem="vZQ-Zw-Rxo" firstAttribute="centerY" secondItem="k4H-aV-cpo" secondAttribute="centerY" id="NGz-wD-LUF"/>
+                            <constraint firstItem="vcT-Rm-bCc" firstAttribute="top" secondItem="oAT-qP-lsJ" secondAttribute="bottom" constant="8" symbolic="YES" id="OjK-1P-fzX"/>
                             <constraint firstItem="sG0-qw-ZvI" firstAttribute="centerY" secondItem="aAw-fI-AVq" secondAttribute="centerY" id="Q5b-25-idi"/>
                             <constraint firstItem="aAw-fI-AVq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="SRG-d6-Kbf"/>
                             <constraint firstItem="sG0-qw-ZvI" firstAttribute="top" secondItem="hbZ-Bv-ajr" secondAttribute="bottom" constant="3" id="VkG-qi-R5R"/>
@@ -147,7 +148,6 @@
                             <constraint firstItem="oAT-qP-lsJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jP6-at-aYL"/>
                             <constraint firstItem="k4H-aV-cpo" firstAttribute="trailing" secondItem="aAw-fI-AVq" secondAttribute="trailing" id="jVh-6F-aYB"/>
                             <constraint firstItem="vcT-Rm-bCc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lsw-kY-D0Z"/>
-                            <constraint firstItem="vcT-Rm-bCc" firstAttribute="top" secondItem="oAT-qP-lsJ" secondAttribute="bottom" constant="8" symbolic="YES" id="mMh-p8-38E"/>
                             <constraint firstItem="oAT-qP-lsJ" firstAttribute="centerX" secondItem="4eJ-FN-9CP" secondAttribute="centerX" id="mea-O6-6I8"/>
                             <constraint firstItem="M6U-8K-cK5" firstAttribute="trailing" secondItem="aAw-fI-AVq" secondAttribute="trailing" id="oND-YA-Ocm"/>
                             <constraint firstItem="M6U-8K-cK5" firstAttribute="leading" secondItem="k4H-aV-cpo" secondAttribute="leading" id="obw-u7-pfn"/>
@@ -169,15 +169,15 @@
                                 <exclude reference="e4H-BV-xUs"/>
                                 <exclude reference="if2-Ms-uCi"/>
                                 <exclude reference="obw-u7-pfn"/>
-                                <exclude reference="2HL-Od-p5s"/>
-                                <exclude reference="Jh9-A2-fkZ"/>
-                                <exclude reference="M3Z-tf-Gcu"/>
-                                <exclude reference="yVN-en-4GS"/>
                                 <exclude reference="14b-ja-0r7"/>
                                 <exclude reference="F4D-zY-LZQ"/>
                                 <exclude reference="SRG-d6-Kbf"/>
                                 <exclude reference="Yml-rM-9qH"/>
                                 <exclude reference="pgt-Ca-zNL"/>
+                                <exclude reference="2HL-Od-p5s"/>
+                                <exclude reference="Jh9-A2-fkZ"/>
+                                <exclude reference="M3Z-tf-Gcu"/>
+                                <exclude reference="yVN-en-4GS"/>
                                 <exclude reference="9rJ-fi-TSa"/>
                                 <exclude reference="IMD-42-A6B"/>
                             </mask>
